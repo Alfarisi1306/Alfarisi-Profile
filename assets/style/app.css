@@ -1,6 +1,5 @@
 body{
-    background: linear-gradient(180deg, #e8c4a8 0%, #c47a4a 60%, #9a5c36 100%);
-    padding-top: 70px;
+    background-color: #e8c4a8;
 }
 
 /* ================= PROFILE ================= */
@@ -113,21 +112,17 @@ body{
     color: #c47a4a;
 }
 
-.timeline-item:last-child {
-    margin-bottom: 80px;
-}
+
 
 /* ================= ACHIEVEMENT ================= */
 
 .achievement {
-    background: linear-gradient(180deg, #9a5c36 0%, #c47a4a 100%);
+    background-color: #e8c4a8;
     padding: 100px 0;
     margin-bottom: 0;
 }
 
-.achievement h1 {
-    color: #f5e6d8;
-}
+
 
 .achievement .card {
     border: none;
@@ -285,10 +280,6 @@ html {
     }
 }
 
-section {
-  padding: 60px 0;
-}
-
 .footer p {
     max-width: 600px;
     margin: auto;
@@ -428,8 +419,18 @@ section {
 .back-to-top {
     display: none;
 }
-.section-wave {
-    display: block;
-    width: 100%;
-    margin-top: -1px;
+.achievement {
+    margin-bottom: 0 !important;
+}
+
+.footer {
+    margin-top: 0 !important;
+}
+section {
+    margin: 0;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
