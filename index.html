@@ -11,6 +11,8 @@
      crossorigin="anonymous">
      <link rel="stylesheet" href="assets/style/app.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
@@ -42,28 +44,25 @@
     </div>
   </div>
 </nav>
-<section>
-    <div class="container">
-        <div class="profile">
-        <img 
-        class="rounded-circle profileimage"
-        src="assets/style/image/profileimage.jpeg" 
-        alt="">
-
-        <h2>Muhammad Salman Alfarisi</h2>
-        <h4>Mahasiswa</h4>
-        <button class="btn btn-light mt-3" onclick="welcome()">
+<section class="hero">
+  
+  <div class="hero-content text-center">
+    <h2>Muhammad Salman Alfarisi</h2>
+    <h4>Mahasiswa</h4>
+    <div class="kenalan-box mt-3">
   Kenalan Yuk
-</button>
- </div>
-    </div>   
-</section>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+</div>
+  </div>
+
+  <svg class="wave" xmlns="http://www.w3.org/2000/svg"
+       viewBox="0 0 1440 320"
+       preserveAspectRatio="none">
     <path fill="#ffffff"
-     fill-opacity="1" 
-     d="M0,64L21.8,96C43.6,128,87,192,131,197.3C174.5,203,218,149,262,149.3C305.5,149,349,203,393,229.3C436.4,256,480,256,524,218.7C567.3,181,611,107,655,106.7C698.2,107,742,181,785,208C829.1,235,873,213,916,192C960,171,1004,149,1047,149.3C1090.9,149,1135,171,1178,197.3C1221.8,224,1265,256,1309,250.7C1352.7,245,1396,203,1418,181.3L1440,160L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z">
+      d="M0,64L21.8,96C43.6,128,87,192,131,197.3C174.5,203,218,149,262,149.3C305.5,149,349,203,393,229.3C436.4,256,480,256,524,218.7C567.3,181,611,107,655,106.7C698.2,107,742,181,785,208C829.1,235,873,213,916,192C960,171,1004,149,1047,149.3C1090.9,149,1135,171,1178,197.3C1221.8,224,1265,256,1309,250.7C1352.7,245,1396,203,1418,181.3L1440,160L1440,320L0,320Z">
     </path>
-</svg>
+  </svg>
+
+</section>
 <section id="biodata" class="biodata">
   <h1 class="text-center mb-5">BIODATA</h1>
 
@@ -71,8 +70,8 @@
     <div class="row justify-content-center g-4">
 
       <!-- Card Tentang Saya -->
-      <div class="col-md-5">
-        <div class="card shadow p-4">
+      <div class="col-md-5 d-flex">
+        <div class="card shadow p-4 w-100">
           <h4>About Me</h4>
           <p>
             Saya merupakan mahasiswa semester 2 Sistem Informasi di Universitas Internasional Batam.
@@ -83,14 +82,14 @@
       </div>
 
       <!-- Card Data Diri -->
-      <div class="col-md-5">
-        <div class="card shadow p-4">
+      <div class="col-md-5 d-flex">
+        <div class="card shadow p-4 w-100">
           <h4>Personal Data</h4>
           <ul class="list-unstyled">
   <li><i class="fa-solid fa-user"></i> <strong>Name:</strong> Muhammad Salman Alfarisi</li>
   <li><i class="fa-solid fa-location-dot"></i> <strong>Place and Date of birth:</strong> Palembang 13 Januari 2006</li>
   <li><i class="fa-solid fa-house"></i> <strong>Address:</strong> Batam,Kepulauan Riau</li>
-  <li><i class="fa-solid fa-envelope"></i> <strong>Email:</strong> msalmanalfarisi1301@gmail.com</li>
+  <li><i class="fa-solid fa-envelope"></i> <strong>Email:</strong> 25.01.muhammad.11@uib.edu</li>
   <li><i class="fa-solid fa-graduation-cap"></i> <strong>Status:</strong> Mahasiswa Sistem Informasi UIB</li>
 </ul>
         </div>
@@ -99,28 +98,28 @@
     </div>
   </div>         
 </section>
-<section id="skill" class="py-5 bg-light">
+<section id="skill" class="py-5">
   <div class="container">
     <h1 class="text-center mb-5">SKILL</h1>
 
-    <h5>HTML</h5>
-    <div class="progress mb-4">
-      <div class="progress-bar bg-primary" style="width: 15%;">15%</div>
-    </div>
-
-    <h5>CSS</h5>
-    <div class="progress mb-4">
-      <div class="progress-bar bg-primary" style="width: 15%;">15%</div>
-    </div>
-
-    <h5>JavaScript</h5>
-    <div class="progress mb-4">
-      <div class="progress-bar bg-primary" style="width: 0%;">0%</div>
-    </div>
-
     <h5>Python</h5>
-    <div class="progress">
-      <div class="progress-bar bg-primary" style="width: 45%;">45%</div>
+    <div class="progress mb-4">
+      <div class="progress-bar bg-primary" style="width: 55%;">55%</div>
+    </div>
+
+    <h5>Mandarin</h5>
+    <div class="progress mb-4">
+      <div class="progress-bar bg-primary" style="width: 35%;">35%</div>
+    </div>
+
+    <h5>English</h5>
+    <div class="progress mb-4">
+      <div class="progress-bar bg-primary" style="width: 65%;">65%</div>
+    </div>
+
+    <h5>Arabic</h5>
+    <div class="progress mb-4">
+      <div class="progress-bar bg-primary" style="width: 85%;">85%</div>
     </div>
   </div>  
 </section>
@@ -130,22 +129,58 @@
 
     <div class="timeline">
 
-      <div class="timeline-item">
-        <h5>SDS Alkahfi Islamic School Batam</h5>
-        <small>2012 - 2018</small>
-      </div>
+  <div class="timeline-item">
+    <h5>SDS Alkahfi Islamic School Batam</h5>
+    <small>2012 - 2018</small>
+  </div>
 
-      <div class="timeline-item">
-        <h5>Ma'had Tahfizh Abu Darda Pekanbaru</h5>
-        <small>2018 - 2024</small>
-      </div>
+  <div class="timeline-item">
+    <h5>Ma'had Tahfizh Abu Darda Pekanbaru</h5>
+    <small>2018 - 2024</small>
+  </div>
 
-      <div class="timeline-item">
-        <h5>Universitas Internasional Batam</h5>
-        <small>2025 - Sekarang</small>
-      </div>
-    </div>
-  </div>  
+  <div class="timeline-item">
+    <h5>Universitas Internasional Batam</h5>
+    <small>2025 - Sekarang</small>
+  </div>
+
+</div>
+
+<!-- TABEL -->
+<h4 class="text-center mt-5"> Riwayat Sertifikasi</h4>
+
+<div class="table-responsive">
+  <table class="table table-bordered table-striped text-center align-middle shadow">
+    <thead class="table-dark">
+      <tr>
+        <th>No</th>
+        <th>Nama Seminar</th>
+        <th>Tahun</th>
+        <th>Keterangan</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Studium Generale: AI-Powered Intelligent Hyper Democracy</td>
+        <td>2025</td>
+        <td>Peserta</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Workshop "Behind the Scene of Social Media: Business Model and Building Your Digital Marketing Career"</td>
+        <td>2025</td>
+        <td>Peserta</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Sosialisasi Program Kampus Berdampak Semester Genap 2025/2026</td>
+        <td>2025</td>
+        <td>Peserta</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 </section>
 <section id="achievement" class="achievement">
     <div class="container">
@@ -196,8 +231,8 @@
 </div>
     </div>    
 </section>
-    <!-- ================= CONTACT / FOOTER ================= -->
-<<section id="contact" class="footer">
+<!-- ================= CONTACT / FOOTER ================= -->
+<section id="contact" class="footer">
   <div class="container">
 
     <div class="row text-center text-md-start align-items-start">
@@ -279,3 +314,4 @@ window.addEventListener("scroll", function () {
 </script>
   </body>
 </html>
+
