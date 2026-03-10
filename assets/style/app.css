@@ -66,8 +66,9 @@ body{
 /* ================= SKILL ================= */
 
 #skill {
-    background: linear-gradient(#fffeff 0%, #ffffffd5 40%, #fdfdfd00 100%)
-    
+    background: linear-gradient#fffeff 0%, #ffffffd5 40%, #fdfdfd00 100%;
+    padding: 100px 0;
+    margin-bottom: 0;
 }
 
 .progress-bar {
@@ -77,8 +78,9 @@ body{
 /* ================= EDUCATION ================= */
 
 #education {
-    background: linear-gradient(#fffeff 0%, #ffffffd5 40%, #fdfdfd00 100%)
-    
+    background: linear-gradient#fffeff 0%, #ffffffd5 40%, #fdfdfd00 100%;
+    padding: 100px 0;
+    margin-bottom: 0;
 }
 
 #education h5 {
@@ -87,7 +89,15 @@ body{
 }
 
 #education small {
-    color: #c47a4a;
+    color: #9a5c36;
+}
+#education table{
+margin-top:30px;
+}
+
+#education h1{
+margin-top:60px;
+margin-bottom:20px;
 }
 
 .timeline {
@@ -117,7 +127,7 @@ body{
 /* ================= ACHIEVEMENT ================= */
 
 .achievement {
-    background-color: #e8c4a8;
+    background: linear-gradient#fffeff 0%, #ffffffd5 40%, #fdfdfd00 100%;
     padding: 100px 0;
     margin-bottom: 0;
 }
@@ -528,4 +538,75 @@ h1,h2,h3,h4,h5{
 body {
   background-color: #e8c4a8;
   background-image: url("https://www.transparenttextures.com/patterns/arabesque.png");
+}
+/* SIDEBAR */
+.sidebar{
+position:fixed;
+left:-250px;
+top:0;
+width:250px;
+height:100%;
+background:#9a5c36;
+color:white;
+padding-top:80px;
+transition:0.3s;
+z-index:4000;
+}
+
+.sidebar a{
+display:block;
+padding:15px 25px;
+color:white;
+text-decoration:none;
+font-size:16px;
+}
+
+.sidebar a:hover{
+background:#c47a4a;
+}
+
+.sidebar.active{
+left:0;
+}
+
+/* tombol menu */
+/* biar navbar di atas */
+.custom-navbar{
+z-index:1500;
+}
+.logo-text{
+margin-left:60px;
+}
+.navbar-brand{
+font-weight:600;
+font-size:22px;
+}
+.menu-btn{
+position: fixed;
+top: 15px;
+left: 15px;
+z-index: 5000;
+background: transparent;
+border: none;
+font-size: 24px;
+color: white;
+cursor: pointer;
+}
+.sidebar.active{
+left:0;
+}
+.kenalan-box{
+display:inline-block;
+padding:10px 25px;
+background:#9a5c36;
+color:white;
+border-radius:8px;
+font-weight:500;
+text-decoration:none;
+transition:0.3s;
+}
+
+.kenalan-box:hover{
+background:#c47a4a;
+transform:translateY(-3px);
 }
